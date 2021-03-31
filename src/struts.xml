@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+"http://struts.apache.org/dtds/struts-2.5.dtd">
+
+<struts>
+	<constant name="struts.mapper.action.prefix.enabled" value="true" />
+    <package name="action" extends="struts-default">
+    
+    	<!--
+        <action name="*cal" method="{1}" class="action.CalculatorAct" >
+            <result name="input">/index.jsp</result>
+            <result name="success">/success.jsp</result>
+        </action>
+      -->
+      
+      <action name="addcal" class="action.CalculatorAct" method="add">
+            <result name="input">/index.jsp</result>
+            <result name="success">/success.jsp</result>
+      </action>
+      <action name="subcal" class="action.CalculatorAct" method="sub">
+            <result name="input">/index.jsp</result>
+            <result name="success">/success.jsp</result>
+      </action>
+      <action name="mulcal" class="action.CalculatorAct" method="mul">
+            <result name="input">/index.jsp</result>
+            <result name="success">/success.jsp</result>
+      </action>
+      <action name="divcal" class="action.CalculatorAct" method="div">
+            <result name="input">/index.jsp</result>
+            <result name="success">/success.jsp</result>
+      </action>
+      
+      <!-- <action name="cal" class="action.CalculatorAct">
+            <result name="input">/index.jsp</result>
+         </action> -->
+       <!--      
+        <action name="addcal" class="action.CalculatorAct" method="add">
+            <result name="success">/success.jsp</result>
+        </action>
+        <action name="subcal" class="action.CalculatorAct" method="sub">
+            <result name="success">/success.jsp</result>
+        </action>
+        <action name="mulcal" class="action.CalculatorAct" method="mul">
+            <result name="success">/success.jsp</result>
+        </action>
+        <action name="divcal" class="action.CalculatorAct" method="div">
+            <result name="success">/success.jsp</result>
+        </action> 
+       
+      -->
+      
+    </package>
+</struts>
